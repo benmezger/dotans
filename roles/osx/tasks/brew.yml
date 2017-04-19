@@ -3,13 +3,19 @@
   command: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 - name: Tap fonts
-  homebrew_tap: tap=caskroom/fonts state=present
+  homebrew_tap:
+    name: caskroom/fonts
+    state: present
 
 - name: Tap cask
-  homebrew_tap: tap=caskroom/cask state=present
+  homebrew_tap:
+    name: caskroom/cask
+    state: present
 
 - name: Install Homebrew packages
-  homebrew: name={{ item }} state=latest
+  homebrew:
+    name: {{ item }}
+    state: latest
   with_items:
     - python
     - vim
@@ -22,7 +28,9 @@
     - valgrind
 
 - name: Install apps using Homebrew Cask
-  homebrew_cask: name={{ item }} state=present
+  homebrew_cask:
+    name: {{ item }}
+    state: present
   with_items:
     - google-chrome
     - firefox
@@ -33,7 +41,9 @@
     - thunderbird
 
 - name: Install fonts using Homebrew Cask
-  homebrew_cask: name=font-inconsolata-dz state=present
+  homebrew_cask:
+    name: font-inconsolata-dz
+    state: present
 
 - name: Cleanup Homebrew packages
   command: brew cleanup -s

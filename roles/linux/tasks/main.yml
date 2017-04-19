@@ -6,7 +6,27 @@
     force: yes
 
 - name: Build and install Aura
-  command: chdir=/tmp/aura-bin makepkg -si --noconfirm
+  command: makepkg -si --noconfirm
+  args:
+    chdir: /tmp/aura-bin
 
 - include: pacman.yml
 - include: python.yml
+
+- name: Restore files using GNU Stow
+  command: stow {{ item }}
+  args:
+    chdir: ~/dotfiles
+  with_items:
+    - bin
+    - config
+    - emacs
+    - git
+    - gnupg
+    - ipython
+    - misc
+    - tmux
+    - vim
+    - weechat
+    - zsh
+

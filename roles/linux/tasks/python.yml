@@ -7,5 +7,4 @@
     - virtualenvwrapper
     - ipython
     - grasp
-    - mackup
   become: true

@@ -2,3 +2,18 @@
 - include: brew.yml
 - include: python.yml
 
+- name: Restore files using GNU Stow
+  command: stow {{ item }}
+  args:
+    chdir: ~/dotfiles
+  with_items:
+    - bin
+    - emacs
+    - git
+    - gnupg
+    - ipython
+    - misc
+    - tmux
+    - vim
+    - weechat
+    - zsh

@@ -26,6 +26,7 @@
     - tor
     - reattach-to-user-namespace
     - valgrind
+    - stow
 
 - name: Install apps using Homebrew Cask
   homebrew_cask:

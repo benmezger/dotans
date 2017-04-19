@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   roles:
-    - role: osx
     - role: common
+    - role: osx

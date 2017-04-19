@@ -2,7 +2,7 @@
 - name: Install zplug
   git:
     repo: https://github.com/zplug/zplug
-    dest: ~/zplug
+    dest: ~/.zplug
 
 - name: Clone dotfiles
   git:

@@ -27,6 +27,7 @@
     - rofi
     - openssh
     - lxappearance
+    - ccid
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

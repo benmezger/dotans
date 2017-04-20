@@ -12,7 +12,6 @@
     - tmux
     - tor
     - valgrind
-    - firefox
     - chromium
     - zsh
     - xorg-xset

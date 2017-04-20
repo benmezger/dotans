@@ -21,6 +21,12 @@
     - feh
     - pcsc-tools
     - stow
+    - scrot
+    - xautolock
+    - wget
+    - rofi
+    - openssh
+    - lxappearance
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm
@@ -35,4 +41,4 @@
     - dropbox
     - git-crypt
     - solaar
-
+    - otf-inconsolata-dz

@@ -38,6 +38,8 @@
     - flux
     - emacs
     - spotify
+    - docker
+    - 1password
 
 - name: Install fonts using Homebrew Cask
   homebrew_cask:

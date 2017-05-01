@@ -8,4 +8,7 @@
   git:
     repo: https://github.com/benmezger/dotfiles.git
     dest: ~/dotfiles
-
+- name: Clone TPM (for Tmux)
+  git:
+    repo: https://github.com/tmux-plugins/tpm
+    dest: ~/.tmux/plugins/tpm

@@ -23,6 +23,10 @@
     - tor
     - reattach-to-user-namespace
     - stow
+    - pinentry-mac
+    - git
+    - the_silver_searcher
+    - diff-so-fancy
 
 - name: Install apps using Homebrew Cask
   homebrew_cask:

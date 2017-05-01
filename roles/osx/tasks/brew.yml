@@ -35,6 +35,9 @@
     - vlc
     - skype
     - thunderbird
+    - flux
+    - emacs
+    - spotify
 
 - name: Install fonts using Homebrew Cask
   homebrew_cask:

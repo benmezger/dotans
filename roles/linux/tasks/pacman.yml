@@ -29,6 +29,7 @@
     - lxappearance
     - ccid
     - imagemagick
+    - cmake
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

@@ -27,6 +27,7 @@
     - reattach-to-user-namespace
     - valgrind
     - stow
+    - cmake
 
 - name: Install apps using Homebrew Cask
   homebrew_cask:

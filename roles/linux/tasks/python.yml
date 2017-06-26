@@ -7,4 +7,5 @@
     - virtualenvwrapper
     - ipython
     - grasp
+    - neovim
   become: true

@@ -7,4 +7,4 @@
     - virtualenvwrapper
     - ipython
     - grasp
-
+    - neovim

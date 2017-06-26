@@ -35,6 +35,7 @@
     - linux-zen-headers
     - linux-headers
     - neovim
+    - gnome-keyring
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm
@@ -48,5 +49,4 @@
     - gitter
     - dropbox
     - git-crypt
-    - solaar
     - otf-inconsolata-dz

@@ -37,6 +37,13 @@
     - neovim
     - gnome-keyring
     - acpi
+    - gdb
+    - unrar
+    - zathura-pdf-mupdf
+    - redshift
+    - networkmanager
+    - network-manager-applet
+    - networkmanager-openvpn
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

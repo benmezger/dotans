@@ -36,6 +36,7 @@
     - linux-headers
     - neovim
     - gnome-keyring
+    - acpi
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

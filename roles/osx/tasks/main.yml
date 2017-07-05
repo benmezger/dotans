@@ -15,7 +15,6 @@
     - misc
     - tmux
     - vim
-    - weechat
     - zsh
 
 - name: Install Vim-Plug

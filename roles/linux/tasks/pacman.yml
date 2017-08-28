@@ -44,6 +44,8 @@
     - networkmanager
     - network-manager-applet
     - networkmanager-openvpn
+    - noto-fonts-emoji
+    - ttf-symbola
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

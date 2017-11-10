@@ -1,5 +1,11 @@
 ---
 - hosts: localhost
+  vars_prompt:
+    - name: "mas_email"
+      prompt: "App Store email (mas)"
+    - name: "mas_password"
+      prompt: "App store password (mas)"
+      private: yes
   roles:
     - role: common
     - role: osx

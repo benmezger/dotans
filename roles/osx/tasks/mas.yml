@@ -5,12 +5,12 @@
 - name: Install Apple Store apps using mas
   command: mas install "{{ item }}"
   with_items:
-    - 599327197 # Collective
+    - 599327197  # Collective
     - 1094298678 # RealDNS
-    - 443126292 # TrashMe
-    - 737047715 # Magic Number
+    - 443126292  # TrashMe
+    - 737047715  # Magic Number
     - 1262957439 # Textual 7
-    - 639764244 # Xee
-    - 441258766 # Magnet
-    - 409789998 # Twitter
+    - 639764244  # Xee
+    - 441258766  # Magnet
+    - 409789998  # Twitter
 

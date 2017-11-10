@@ -1,7 +1,7 @@
 ---
-- include: brew.yml
-- include: python.yml
-- include: mas.yml
+- import_tasks: brew.yml
+- import_tasks: python.yml
+- import_tasks: mas.yml
 
 - name: Restore files using GNU Stow
   command: stow {{ item }}

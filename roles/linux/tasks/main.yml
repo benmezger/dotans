@@ -10,8 +10,8 @@
   args:
     chdir: /tmp/aura-bin
 
-- include: pacman.yml
-- include: python.yml
+- import_tasks: pacman.yml
+- import_tasks: python.yml
 
 - name: Restore files using GNU Stow
   command: stow {{ item }}

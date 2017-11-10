@@ -28,6 +28,7 @@
     - the_silver_searcher
     - diff-so-fancy
     - cmake
+    - mas
 
 - name: Install apps using Homebrew Cask
   homebrew_cask:

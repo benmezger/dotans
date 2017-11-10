@@ -15,10 +15,8 @@ Then install Ansible using Homebrew with `brew install ansible`
 
 ## How to run
 
-For Linux:
-    1. `ansible-playbook -i inventory linux.yml -K`
-For OSX:
-    1. `ansible-playbook -i inventory osx.yml -K`
+For Linux: `ansible-playbook -i inventory linux.yml -K` .
+For OSX: `ansible-playbook -i inventory osx.yml -K`.
 
 Further, you can take a look at my `dotfiles`
 [here](https://github.com/benmezger/dotfiles)

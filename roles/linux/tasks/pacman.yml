@@ -46,15 +46,15 @@
     - networkmanager-openvpn
     - noto-fonts-emoji
     - ttf-symbola
+    - ttf-font-awesome
+    - the_silver_searcher
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm
   become: true
   with_items:
-    - wire-desktop-bin
     - xss-lock
     - spotify
-    - ttf-font-awesome
     - numix-icon-theme-git
     - gitter
     - dropbox

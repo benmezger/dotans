@@ -48,6 +48,16 @@
     - ttf-symbola
     - ttf-font-awesome
     - the_silver_searcher
+    - vagrant
+    - docker
+    - htop
+    - urxvt-perls
+    - rxvt-unicode
+    - xf86-input-evdev
+    - xf86-input-mouse
+    - xf86-input-keyboard
+    - xf86-video-intel
+    - slim
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

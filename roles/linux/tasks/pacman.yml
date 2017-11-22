@@ -58,6 +58,7 @@
     - xf86-input-keyboard
     - xf86-video-intel
     - slim
+    - qt5-base
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

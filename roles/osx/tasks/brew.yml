@@ -44,6 +44,7 @@
     - docker
     - 1password
     - hopper-disassembler
+    - java
 
 - name: Install fonts using Homebrew Cask
   homebrew_cask:

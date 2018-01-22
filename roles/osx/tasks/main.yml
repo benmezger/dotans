@@ -9,7 +9,6 @@
     chdir: ~/dotfiles
   with_items:
     - bin
-    - emacs
     - git
     - gnupg
     - ipython

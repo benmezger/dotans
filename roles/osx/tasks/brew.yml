@@ -15,6 +15,7 @@
     state: latest
   with_items:
     - python
+    - python3
     - vim
     - fasd
     - ack

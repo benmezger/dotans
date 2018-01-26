@@ -21,7 +21,6 @@
   with_items:
     - bin
     - config
-    - emacs
     - git
     - gnupg
     - ipython

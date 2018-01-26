@@ -94,6 +94,7 @@ For OSX, `dotans` installs:
 #### App Store
 `dotans` installs a few App Store apps using `mas`.
 
+```
 - 599327197  # Collective
 - 1094298678 # RealDNS
 - 443126292  # TrashMe
@@ -103,6 +104,7 @@ For OSX, `dotans` installs:
 - 441258766  # Magnet
 - 409789998  # Twitter
 - 747648890  # Telegram
+```
 
 ### Linux
 For Linux, `dotans` installs:

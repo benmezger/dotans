@@ -18,6 +18,8 @@ Then install Ansible using Homebrew with `brew install ansible`
 
 The Linux version is configured to install on a Archlinux distro. You can easily adapt it to work on another Linux distribution.
 
+Install Ansible using `pacman -Syy ansible`
+
 ## How to run
 
 For Linux: `ansible-playbook -i inventory linux.yml -K` .

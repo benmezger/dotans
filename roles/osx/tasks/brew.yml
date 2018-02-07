@@ -30,6 +30,7 @@
     - diff-so-fancy
     - cmake
     - mas
+    - rbenv
 
 - name: Install apps using Homebrew Cask
   homebrew_cask:

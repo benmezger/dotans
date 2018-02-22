@@ -14,15 +14,21 @@ Make sure you have [Homebrew](https://brew.sh/) installed:
 
 Then install Ansible using Homebrew with `brew install ansible`
 
-### Requirements (Linux)
+### Requirements (Archlinux)
 
-The Linux version is configured to install on a Archlinux distro. You can easily adapt it to work on another Linux distribution.
+You can easily adapt it to work on another Linux distribution.
 
 Install Ansible using `pacman -Syy ansible`
 
+## Requirements (Gentoo)
+
+To install Ansible using Emerge, run `emerge  --ask --verbose app-admin/ansible`
+
 ## How to run
 
-For Linux: `ansible-playbook -i inventory linux.yml -K` .
+For Archlinux: `ansible-playbook -i inventory archlinux.yml -K`.
+
+For Gentoo: `ansible-playbook -i inventory gentoo.yml  -K`.
 
 For OSX: `ansible-playbook -i inventory osx.yml -K`.
 
@@ -32,7 +38,7 @@ Further, you can take a look at my `dotfiles`
 ## Packages
 ### Vim
 
-`dotans` installs a few Vim packages (both for Linux and OSX)
+`dotans` installs the following Vim packages (both for Linux and OSX)
 
 - Vim-Plug
 
@@ -48,7 +54,7 @@ Further, you can take a look at my `dotfiles`
 
 - Tmux-TPM
 
-### Python 
+### Python
 
 `dotans` installs a few Python packages using `pip2` (both for Linux and OSX)
 
@@ -109,77 +115,9 @@ For OSX, `dotans` installs:
 ```
 
 ### Linux
-For Linux, `dotans` installs:
+For Archlinux, see [roles/archlinux/tasks/pacman.yml](this file).
 
-#### Pacman
-- python2
-- python2-pip
-- vim
-- fasd
-- ack
-- gnupg2
-- tmux
-- tor
-- valgrind
-- chromium
-- zsh
-- xorg-xset
-- xorg-xrdb
-- dunst
-- pcsclite
-- feh
-- pcsc-tools
-- stow
-- scrot
-- xautolock
-- wget
-- rofi
-- openssh
-- lxappearance
-- ccid
-- imagemagick
-- cmake
-- libu2f-host
-- linux-zen
-- linux-zen-headers
-- linux-headers
-- neovim
-- gnome-keyring
-- acpi
-- gdb
-- unrar
-- zathura-pdf-mupdf
-- redshift
-- networkmanager
-- network-manager-applet
-- networkmanager-openvpn
-- noto-fonts-emoji
-- ttf-symbola
-- ttf-font-awesome
-- the_silver_searcher
-- vagrant
-- docker
-- htop
-- urxvt-perls
-- rxvt-unicode
-- xf86-input-evdev
-- xf86-input-mouse
-- xf86-input-keyboard
-- xf86-video-intel
-- slim
-- qt5-base
-
-#### AUR
-It also installs a few package from AUR (using Aura).
-
-- xss-lock
-- spotify
-- numix-icon-theme-git
-- gitter
-- dropbox
-- git-crypt
-- otf-inconsolata-dz
-- pairing_tool
+For Gentoo, see [roles/gentoo/tasks/emerge.yml](this file).
 
 ### Linux services
 `dotans` enables a few `systemd` services.

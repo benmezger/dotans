@@ -115,9 +115,9 @@ For OSX, `dotans` installs:
 ```
 
 ### Linux
-For Archlinux, see [roles/archlinux/tasks/pacman.yml](this file).
+For Archlinux, see [https://github.com/benmezger/dotans/blob/master/roles/archlinux/tasks/pacman.yml](this file).
 
-For Gentoo, see [roles/gentoo/tasks/emerge.yml](this file).
+For Gentoo, see [https://github.com/benmezger/dotans/blob/master/roles/gentoo/tasks/emerge.yml](this file).
 
 ### Linux services
 `dotans` enables a few `systemd` services.

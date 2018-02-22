@@ -53,3 +53,4 @@
     - x11-drivers/xf86-video-intel
     - x11-misc/slim
     - x11-misc/xss-lock
+    - app-shells/gentoo-zsh-completions

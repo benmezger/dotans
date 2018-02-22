@@ -1,0 +1,25 @@
+---
+- import_tasks: emerge.yml
+- import_tasks: ../../linux/tasks/services.yml
+
+- name: Restore files using GNU Stow
+  command: stow {{ item }}
+  args:
+    chdir: ~/dotfiles
+  with_items:
+    - bin
+    - config
+    - git
+    - gnupg
+    - ipython
+    - misc
+    - tmux
+    - vim
+    - zsh
+    - X
+
+- name: Install Vim-Plug
+  command: >
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+

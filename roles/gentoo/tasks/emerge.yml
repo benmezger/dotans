@@ -1,0 +1,55 @@
+---
+- name: Emerge packages
+  become: true
+  command: emerge --verbose {{ item }}
+  with_items:
+    - app-editors/vim
+    - sys-apps/ack
+    - app-crypt/gnupg
+    - app-misc/tmux
+    - net-vpn/tor
+    - dev-util/valgrind
+    - www-client/google-chrome
+    - app-shells/zsh
+    - x11-apps/xset
+    - x11-apps/xrdb
+    - x11-misc/dunst
+    - sys-apps/pcsc-lite
+    - media-gfx/feh
+    - sys-apps/pcsc-tools
+    - app-admin/stow
+    - media-gfx/scrot
+    - x11-misc/xautolock
+    - net-misc/wget
+    - x11-misc/rofi
+    - net-misc/openssh
+    - lxde-base/lxappearance
+    - app-crypt/ccid
+    - media-gfx/imagemagick
+    - dev-util/cmake
+    - app-crypt/libu2f-host
+    - sys-kernel/linux-headers
+    - gnome-base/gnome-keyring
+    - sys-power/acpi
+    - sys-devel/gdb
+    - app-arch/unrar
+    - app-text/zathura-pdf-mupdf
+    - x11-misc/redshift
+    - net-misc/networkmanager
+    - net-misc/networkmanager-openvpn
+    - media-fonts/noto
+    - media-fonts/symbola
+    - media-fonts/fontawesome
+    - media-fonts/corefonts
+    - media-libs/fontconfig
+    - sys-apps/the_silver_searcher
+    - app-emulation/docker
+    - sys-process/htop
+    - x11-misc/urxvt-perls
+    - x11-terms/rxvt-unicode
+    - x11-drivers/xf86-input-evdev
+    - x11-drivers/xf86-input-mouse
+    - x11-drivers/xf86-input-keyboard
+    - x11-drivers/xf86-video-intel
+    - x11-misc/slim
+    - x11-misc/xss-lock

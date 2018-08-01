@@ -47,6 +47,7 @@
     - 1password
     - hopper-disassembler
     - java
+    - ckb-next
 
 - name: Install fonts using Homebrew Cask
   homebrew_cask:

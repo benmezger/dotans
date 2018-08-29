@@ -8,4 +8,8 @@
     - ipython
     - grasp
     - neovim
+    - notebook
+    - juypter
+    - flake8
+    - pep8
   become: true

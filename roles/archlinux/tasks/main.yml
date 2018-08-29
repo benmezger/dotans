@@ -11,8 +11,8 @@
     chdir: /tmp/aura-bin
 
 - import_tasks: pacman.yml
-- import_tasks: python.yml
-- import_tasks: services.yml
+- import_tasks: ../../linux/tasks/services.yml
+- import_tasks: ../../linux/tasks/python.yml
 
 - name: Restore files using GNU Stow
   command: stow {{ item }}

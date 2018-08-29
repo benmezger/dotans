@@ -1,6 +1,7 @@
 ---
 - import_tasks: emerge.yml
 - import_tasks: ../../linux/tasks/services.yml
+- import_tasks: ../../linux/tasks/python.yml
 
 - name: Restore files using GNU Stow
   command: stow {{ item }}

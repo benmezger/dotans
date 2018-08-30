@@ -1,0 +1,20 @@
+sudo: required
+language: python
+python: "2.7"
+os: osx
+
+branches:
+  only:
+    - master
+
+before_install:
+  - brew update
+
+install:
+  - brew install ansible
+
+script:
+  - git clone https://github.com/benmezger/dotfiles.git ~/
+  - (cd ~/dotfiles; git checkout osx)
+  - ansible-playbook -i inventory osx.yml -K
+

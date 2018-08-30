@@ -1,6 +1,9 @@
 sudo: required
 os: osx
 
+env:
+  - TRAVIS=1
+
 branches:
   only:
     - master

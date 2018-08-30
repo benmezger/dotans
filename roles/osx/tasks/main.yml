@@ -2,6 +2,7 @@
 - import_tasks: brew.yml
 - import_tasks: python.yml
 - import_tasks: mas.yml
+  when: lookup('env', 'TRAVIS') is 0
 
 - name: Restore files using GNU Stow
   command: stow {{ item }}

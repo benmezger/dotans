@@ -21,6 +21,7 @@ before_install:
 install:
   - brew install ansible
   - brew install ccache
+  - export PATH="/usr/local/opt/ccache/libexec:$PATH"
 
 script:
   - git clone https://github.com/benmezger/dotfiles.git ~/dotfiles

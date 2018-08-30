@@ -12,7 +12,7 @@ install:
   - brew install ansible
 
 script:
-  - git clone https://github.com/benmezger/dotfiles.git ~/
+  - git clone https://github.com/benmezger/dotfiles.git ~/dotfiles
   - (cd ~/dotfiles; git checkout osx)
   - ansible-playbook -i inventory osx.yml -K
 

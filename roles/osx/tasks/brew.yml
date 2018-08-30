@@ -4,11 +4,6 @@
     name: homebrew/cask-fonts
     state: present
 
-- name: Tap cask
-  homebrew_tap:
-    name: caskroom/cask
-    state: present
-
 - name: Install Homebrew packages
   homebrew:
     name: "{{ item }}"

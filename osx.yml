@@ -1,11 +1,14 @@
 ---
 - hosts: localhost
-  vars_prompt:
-    - name: "mas_email"
-      prompt: "App Store email (mas)"
-    - name: "mas_password"
-      prompt: "App store password (mas)"
-      private: yes
+  pre_tasks:
+    - pause:
+        prompt: "App Store email (mas)"
+      when: lookup('env', 'TRAVIS') == '0'
+      register: "mas_email"
+    - pause:
+        prompt: "App store password (mas)"
+      when: lookup('env', 'TRAVIS') == '0'
+      register: "mas_password"
   roles:
     - role: common
     - role: osx

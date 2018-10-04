@@ -52,5 +52,3 @@
 - name: Cleanup Homebrew packages
   command: brew cleanup -s
 
-- name: Cleanup Homebrew Cask apps
-  command: brew cask cleanup

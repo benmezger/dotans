@@ -17,7 +17,7 @@
     - tmux
     - vim
     - zsh
-
+    - virtualenvs
 
 - name: Ensure vim directories exist
   file:

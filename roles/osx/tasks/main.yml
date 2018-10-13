@@ -30,3 +30,10 @@
     url: https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     dest: ~/.vim/autoload/plug.vim
 
+- name: Copy launchd daemons
+  become: true
+  command: cp ./confs/*.plist /Library/LaunchDaemons/
+
+- name: Make launchd start tmux on boot
+  become: true
+  command: launchctl load -w /Library/LaunchDaemons/com.tmux.plist

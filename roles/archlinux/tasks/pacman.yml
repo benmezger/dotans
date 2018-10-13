@@ -59,6 +59,7 @@
     - xf86-video-intel
     - slim
     - qt5-base
+    - fish
 
 - name: Install packages from AUR
   command: aura -A {{ item }} --noconfirm

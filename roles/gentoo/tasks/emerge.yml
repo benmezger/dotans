@@ -54,3 +54,4 @@
     - x11-misc/slim
     - x11-misc/xss-lock
     - app-shells/gentoo-zsh-completions
+    - app-shells/fish

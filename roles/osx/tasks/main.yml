@@ -32,7 +32,7 @@
 
 - name: Copy Tmux launchd daemon
   become: true
-  command: cp ./confs/com.tmux.plist /Library/LaunchDaemons/
+  command: cp ~/dotans/roles/osx/tasks/confs/com.tmux.plist /Library/LaunchDaemons/
 
 - name: Make launchd start tmux on boot
   become: true

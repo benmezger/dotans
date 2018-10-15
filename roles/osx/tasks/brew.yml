@@ -6,27 +6,26 @@
 
 - name: Install Homebrew packages
   homebrew:
-    name: "{{ item }}"
     state: latest
-  with_items:
-    - python
-    - python3
-    - vim
-    - fasd
-    - ack
-    - gnupg2
-    - tmux
-    - tor
-    - reattach-to-user-namespace
-    - stow
-    - pinentry-mac
-    - git
-    - the_silver_searcher
-    - diff-so-fancy
-    - cmake
-    - mas
-    - rbenv
-    - fish
+    name:
+      - python
+      - python3
+      - vim
+      - fasd
+      - ack
+      - gnupg2
+      - tmux
+      - tor
+      - reattach-to-user-namespace
+      - stow
+      - pinentry-mac
+      - git
+      - the_silver_searcher
+      - diff-so-fancy
+      - cmake
+      - mas
+      - rbenv
+      - fish
 
 - name: Install apps using Homebrew Cask
   homebrew_cask:

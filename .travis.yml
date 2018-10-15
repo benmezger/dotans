@@ -9,6 +9,7 @@ cache:
     - $HOME/Library/Caches/pip
     - /usr/local/Cellar
     - /usr/local/Caskroom
+    - /usr/local/opt
     - /Applications/
 
 env:

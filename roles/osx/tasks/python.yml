@@ -17,4 +17,4 @@
       - jupyter
       - black
       - ipdb
-    state: forcereinstall
+    extra_args: --upgrade

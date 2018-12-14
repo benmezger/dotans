@@ -8,8 +8,6 @@
   homebrew:
     state: latest
     name:
-      - python
-      - python3
       - vim
       - fasd
       - ack
@@ -26,6 +24,9 @@
       - mas
       - rbenv
       - fish
+      - xz
+      - readline
+      - pyenv
 
 - name: Install apps using Homebrew Cask
   homebrew_cask:

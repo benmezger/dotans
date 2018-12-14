@@ -1,13 +1,18 @@
 ---
+- name: Install Python using pyenv
+  command: pyenv install 3.7.0
+
+- name: Set global Python version
+  command: pyenv global 3.7.0
+
 - name: Install Python packages using pip
   pip:
-    executable: pip2
+    executable: pip
     name:
-      - virtualenvwrapper
       - ipython
       - grasp
       - neovim
       - notebook
       - jupyter
-      - flake8
-      - pep8
+      - black
+      - ipdb

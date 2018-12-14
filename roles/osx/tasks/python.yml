@@ -17,3 +17,4 @@
       - jupyter
       - black
       - ipdb
+    state: forcereinstall

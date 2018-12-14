@@ -22,7 +22,6 @@
       - diff-so-fancy
       - cmake
       - mas
-      - rbenv
       - fish
       - xz
       - readline

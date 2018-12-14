@@ -15,6 +15,5 @@
       - neovim
       - notebook
       - jupyter
-      - black
       - ipdb
     extra_args: --upgrade

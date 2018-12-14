@@ -9,6 +9,7 @@
   pip:
     executable: pip
     name:
+      - pip # upgrade pip
       - ipython
       - grasp
       - neovim

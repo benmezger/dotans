@@ -17,7 +17,6 @@
     - tmux
     - vim
     - zsh
-    - virtualenvs
     - fish
 
 - name: Ensure vim directories exist

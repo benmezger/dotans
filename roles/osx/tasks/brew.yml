@@ -26,7 +26,6 @@
       - xz
       - readline
       - pyenv
-
 - name: Install apps using Homebrew Cask
   homebrew_cask:
     name: "{{ item }}"
@@ -43,6 +42,7 @@
     - hopper-disassembler
     - java
     - ckb-next
+   - fortune
 
 - name: Install fonts using Homebrew Cask
   homebrew_cask:

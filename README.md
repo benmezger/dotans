@@ -7,11 +7,9 @@ For this to work, make sure you first clone my [dotfiles](https://github.com/ben
 ### Requirements (OSX)
 
 Make sure you have [Homebrew](https://brew.sh/) installed:
-
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
 Then install Ansible using Homebrew with `brew install ansible`
 
 ### Requirements (Archlinux)
@@ -20,15 +18,9 @@ You can easily adapt it to work on another Linux distribution.
 
 Install Ansible using `pacman -Syy ansible`
 
-## Requirements (Gentoo)
-
-To install Ansible using Emerge, run `emerge  --ask --verbose app-admin/ansible`
-
 ## How to run
 
 For Archlinux: `ansible-playbook -i inventory archlinux.yml -K`.
-
-For Gentoo: `ansible-playbook -i inventory gentoo.yml  -K`.
 
 For OSX: `ansible-playbook -i inventory osx.yml -K`.
 

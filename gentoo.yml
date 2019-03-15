@@ -1,6 +1,0 @@
----
-- hosts: localhost
-  roles:
-    - role: common
-    - role: gentoo
-    - role: linux

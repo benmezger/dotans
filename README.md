@@ -1,4 +1,4 @@
-# Ansible configuration for my dotfiles – [![Build Status](https://travis-ci.org/benmezger/dotans.svg?branch=master)](https://travis-ci.org/benmezger/dotans)
+# Ansible configuration for my dotfiles – [![Build Status](https://travis-ci.org/benmezger/dotans.svg?branch=master)](https://travis-ci.org/benmezger/dotans) (OSX)
 
 This repository takes care of installing all the dependencies for my dotfiles,
 For this to work, make sure you first clone my [dotfiles](https://github.com/benmezger/dotfiles.git) to your `$HOME`.

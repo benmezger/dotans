@@ -1,0 +1,16 @@
+---
+- name: Install Pyenv
+  shell: curl https://pyenv.run | bash
+  args:
+    warn: no
+
+- name: Install Python using pyenv
+  environment:
+    PATH: "~/.pyenv/bin:$PATH"
+  command: pyenv install 3.7.0
+
+- name: Set global Python version
+  environment:
+    PATH: "~/.pyenv/bin:$PATH"
+  command: pyenv global 3.7.0
+

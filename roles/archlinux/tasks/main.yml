@@ -12,7 +12,7 @@
 
 - import_tasks: pacman.yml
 - import_tasks: ../../linux/tasks/services.yml
-- import_tasks: ../../linux/tasks/python.yml
+- import_tasks: ../../common/tasks/python.yml
 
 - name: Restore files using GNU Stow
   command: stow {{ item }}
